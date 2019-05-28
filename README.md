@@ -1,3 +1,17 @@
+<div align="center">
+  
+![jsonschema-logo-v1](https://user-images.githubusercontent.com/6388707/58492913-2b0c6c00-8172-11e9-83e7-04579b9e9252.png)
+
+</div>
+
+<div align="center">
+
+[![NPM version](https://img.shields.io/npm/v/jsonschema-to-interface.svg?style=flat)](https://www.npmjs.com/package/jsonschema-to-interface)
+[![NPM downloads](https://img.shields.io/npm/dm/jsonschema-to-interface.svg?style=flat)](https://www.npmjs.com/package/jsonschema-to-interface)
+[![built with typescript-lib-starter](https://img.shields.io/badge/built%20with-typescript--lib--starter%20-blue.svg)](https://github.com/fox1t/typescript-lib-starter)
+
+</div>
+
 # JSONSchema to TypeScript Interface
 
 This is a **proof of concept.** This is just a convenient cli to add to your package.json and watch for changes on JSONSchemas.
