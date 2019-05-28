@@ -1,5 +1,5 @@
 <div align="center">
-  
+
 ![jsonschema-logo-v1](https://user-images.githubusercontent.com/6388707/58492913-2b0c6c00-8172-11e9-83e7-04579b9e9252.png)
 
 </div>
@@ -40,6 +40,10 @@ Call `generate-interfaces:watch` in parallel with your dev server.
 Call it from the terminal
 
 `generate-interfaces './src/**/schema.json'`
+
+or run it in watch mode:
+
+`generate-interfaces -w './src/**/schema.json'`
 
 ### Note on code style
 
