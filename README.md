@@ -1,23 +1,40 @@
 # JSONSchema to TypeScript Interface
 
-This is a proof of concept.
+This is a **proof of concept.** This is just a convenient cli to add to your package.json and watch for changes on JSONSchemas.
 
-## Usage
+## Usage as project dependency
 
-1. Clone this repo.
+### Install
 
-2. `npm i`
+`npm i -D jsonschema-to-interface`
 
-3. `node index.js examples/schema.json`
+Add scripts to your package.json
 
-### Note on style
+```javascript
+"generate-interfaces": "generate-interfaces './src/**/schema.json'",
+"generate-interfaces:watch": "generate-interfaces -w './src/**/schema.json'"
+```
+
+Call `generate-interfaces:watch` in parallel with your dev server.
+
+## Usage as global CLI
+
+### Install
+
+`npm i -g jsonschema-to-interface`
+
+Call it from the terminal
+
+`generate-interfaces './src/**/schema.json'`
+
+### Note on code style
 
 If there is a `.prettierrc.json` in che current working dir, it will be used to style the output interface.
 
 ## Options
 
 - `-w './glob/path/**/schema.json'`: wathces a glob for changes
-- `-o filename`: set output file name. Defaults to schema `"title"` property or input filename if missing.
+- `-o filename`: set output file name. Defaults to schema `"title"` property or, if the `"title"` is missing, the input filename.
 
 ## Dependencies
 

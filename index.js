@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 require('make-promises-safe')
 
 const argv = require('minimist')(process.argv.slice(2))

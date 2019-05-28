@@ -2,7 +2,9 @@
   "name": "jsonschema-to-interface",
   "version": "0.1.0",
   "description": "Generate TypeScript interfaces from jsonschemas.",
-  "main": "index.js",
+  "bin": {
+    "generate-interfaces": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +18,9 @@
     "url": "https://github.com/fox1t/jsonschema-to-interface/issues"
   },
   "homepage": "https://github.com/fox1t/jsonschema-to-interface#readme",
+  "files": [
+    "/index.js"
+  ],
   "dependencies": {
     "chokidar": "~3.0.0",
     "globby": "~9.2.0",
