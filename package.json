@@ -1,0 +1,26 @@
+{
+  "name": "jsonschema-to-interface",
+  "version": "0.1.0",
+  "description": "Generate TypeScript interfaces from jsonschemas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fox1t/jsonschema-to-interface.git"
+  },
+  "author": "Maksim Sinik <maksim@sinik.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fox1t/jsonschema-to-interface/issues"
+  },
+  "homepage": "https://github.com/fox1t/jsonschema-to-interface#readme",
+  "dependencies": {
+    "chokidar": "~3.0.0",
+    "globby": "~9.2.0",
+    "json-schema-to-typescript": "~6.1.3",
+    "make-promises-safe": "~5.0.0",
+    "minimist": "~1.2.0"
+  }
+}

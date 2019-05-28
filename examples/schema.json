@@ -1,0 +1,194 @@
+{
+  "title": "Event",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string"
+        },
+        "address2": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "province": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postalCode",
+        "province",
+        "country"
+      ],
+      "additionalProperties": false
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "attendanceForm": {
+      "type": "object",
+      "properties": {
+        "rank": {
+          "type": "boolean"
+        },
+        "firstName": {
+          "type": "boolean"
+        },
+        "lastName": {
+          "type": "boolean"
+        },
+        "assignment": {
+          "type": "boolean"
+        },
+        "assignmentDetails": {
+          "type": "boolean"
+        },
+        "delegations": {
+          "type": "boolean"
+        },
+        "delegationsDetails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "value"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "phone": {
+          "type": "boolean"
+        },
+        "whatsapp": {
+          "type": "boolean"
+        },
+        "institutionalEmail": {
+          "type": "boolean"
+        },
+        "spouseCheckbox": {
+          "type": "boolean"
+        },
+        "spouseFirstName": {
+          "type": "boolean"
+        },
+        "spouseLastName": {
+          "type": "boolean"
+        },
+        "allergies": {
+          "type": "boolean"
+        },
+        "placeOfArrival": {
+          "type": "boolean"
+        },
+        "dateOfArrival": {
+          "type": "boolean"
+        },
+        "timeOfArrival": {
+          "type": "boolean"
+        },
+        "arrivalTransportId": {
+          "type": "boolean"
+        },
+        "placeOfDeparture": {
+          "type": "boolean"
+        },
+        "dateOfDeparture": {
+          "type": "boolean"
+        },
+        "timeOfDeparture": {
+          "type": "boolean"
+        },
+        "departureTransportId": {
+          "type": "boolean"
+        },
+        "remarks": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "rank",
+        "firstName",
+        "lastName",
+        "assignment",
+        "delegations",
+        "delegationsDetails",
+        "phone",
+        "whatsapp",
+        "institutionalEmail",
+        "spouseCheckbox",
+        "spouseFirstName",
+        "spouseLastName",
+        "allergies",
+        "placeOfArrival",
+        "dateOfArrival",
+        "timeOfArrival",
+        "arrivalTransportId",
+        "placeOfDeparture",
+        "dateOfDeparture",
+        "timeOfDeparture",
+        "departureTransportId",
+        "remarks"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "_id",
+    "published",
+    "title",
+    "slug",
+    "description",
+    "attendanceForm",
+    "location",
+    "startDate",
+    "endDate"
+  ],
+  "additionalProperties": false
+}
