@@ -27,7 +27,7 @@ if (argv.w) {
   chokidar.watch(globs).on('all', (event, originalFile) => {
     const [outPath] = splitPathAndName(originalFile)
     if (event === 'add') {
-      console.log('watching', event)
+      console.log('watching', originalFile)
     }
     setTimeout(() => generate(originalFile, outPath, argv.o), 100)
   })
