@@ -27,9 +27,16 @@ if (argv.w) {
   chokidar.watch(globs).on('all', (event, originalFile) => {
     const [outPath] = splitPathAndName(originalFile)
     if (event === 'add') {
-      console.log('watching', originalFile)
+      console.log(`🔎 Watching ${originalFile}.`)
     }
-    setTimeout(() => generate(originalFile, outPath, argv.o), 100)
+    setTimeout(
+      () =>
+        generate(originalFile, outPath, argv.o).catch(err => {
+          console.log(`❌ Error compiling ${originalFile}.`)
+          console.log(`🔎 Watching for more changes...`)
+        }),
+      100,
+    )
   })
 } else {
   const paths = sync(globs)

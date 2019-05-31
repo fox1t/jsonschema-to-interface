@@ -25,8 +25,8 @@ This is a **proof of concept.** This is just a convenient cli to add to your pac
 Add scripts to your package.json
 
 ```javascript
-"generate-interfaces": "generate-interfaces './src/**/schema.json'",
-"generate-interfaces:watch": "generate-interfaces -w './src/**/schema.json'"
+"generate-interfaces": "generate-interfaces \"./src/**/schema.json\"",
+"generate-interfaces:watch": "generate-interfaces -w \"./src/**/schema.json\""
 ```
 
 Call `generate-interfaces:watch` in parallel with your dev server.
