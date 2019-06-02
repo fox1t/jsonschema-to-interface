@@ -1,6 +1,6 @@
 {
   "name": "jsonschema-to-interface",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate TypeScript interfaces from jsonschemas.",
   "bin": {
     "generate-interfaces": "./index.js"
